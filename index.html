@@ -10,9 +10,45 @@
     body {
       font-family: "DM Serif Display", serif;
     }
-    
+
+    @media (max-width: 600px) {
+
+      /* screens less than 600px wide */
+      body {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (min-width: 601px) {
+
+      /* screens less than 600px wide */
+      body {
+        background-color: white;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    #headline {
+      display: block;
+    }
+
+    p {
+      padding: 1em 1em 1em 20px;
+    }
   </style>
   <body>
-		
+    <div id="headline">
+      <h1>KW Travels</h1>
+    </div>
+
   </body>
 </html>
