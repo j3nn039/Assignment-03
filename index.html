@@ -7,6 +7,27 @@
     <link href="https://fonts.googleapis.com/css?family=DM Serif Display" rel="stylesheet">
   </head>
   <style>
+    ul {
+      font-family: "DM Serif Display", serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li a {
+      color: #234014;
+      display: block;
+      padding: 10px;
+    }
+
+    li a:hover {
+      color: #898C32;
+    }
+
+    li a:active {
+      color: #D9042C;
+    }
+
     body {
       font-family: "DM Serif Display", serif;
     }
@@ -22,8 +43,13 @@
       img {
         width: 100%;
         height: auto;
-        opacity: 0.6;
       }
+
+      li a {
+        display: block;
+        padding: 3px;
+      }
+
     }
 
     @media (min-width: 601px) {
@@ -36,7 +62,10 @@
       img {
         width: 100%;
         height: auto;
-        opacity: 0.6;
+      }
+
+      li {
+        float: left
       }
     }
 
@@ -57,6 +86,13 @@
   <body>
     <div id="headline">
       <h1>KW Travels</h1>
+      <ul>
+        <li><a href="#home">Wonder of Lights</a></li>
+        <li><a href="#news">Christkrnidl Market</a></li>
+        <li><a href="#contact">Comment</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#about">Connect</a></li>
+      </ul>
     </div>
     <img src="mobile title image.jpg" alt="description of image">
     <h2>01. <br> Wonder of Lights</h2>
