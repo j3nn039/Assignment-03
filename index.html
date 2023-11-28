@@ -40,42 +40,55 @@
         text-align: center
       }
 
-      img {
-        width: 100%;
-        height: auto;
+      #mobileimage img {
+          width: 100%;
+          height: auto;
+        }
+        
+      #desktopimage img {
+          display: none;
       }
 
-      li a {
-        display: block;
-        padding: 3px;
-      }
-
+        li a {
+          display: block;
+          padding: 3px;
+        }
     }
 
     @media (min-width: 601px) {
 
-      /* screens less than 600px wide */
+      /* screens larger than 600px wide */
       body {
         background-color: white;
       }
 
       img {
-        width: 100%;
+        max-width: 50%;
         height: auto;
       }
 
       li {
         float: left
       }
+
+    #headline {
+      display: block;
+    }
+
+    #desktopimage img {
+        max-width: 50%;
+        height: auto;
+      }
+      
+      #mobileimage img {
+        display: none;
+      }
+
     }
 
     img {
       background-color: #D9042C;
       padding: .800em;
-    }
-
-    #headline {
-      display: block;
     }
 
     h2 {
@@ -94,7 +107,12 @@
         <li><a href="#Connect">Connect</a></li>
       </ul>
     </div>
-    <img src="mobile title image.jpg" alt="description of image">
+    <div id="mobileimage">
+      <img src="mobile title image.jpg" alt="description of image">
+    </div>
+    <div id="desktopimage">
+      <img src="desktop title image.jpg" alt="description of image">
+    </div>
     <h2>01. <br> Wonder of Lights</h2>
     <p>Where: Waterloo Park <br>
       When: November 25, 2023 - January 1, 2024 <br>
