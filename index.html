@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM Serif Display" rel="stylesheet">
   </head>
   <style>
+
     ul {
       font-family: "DM Serif Display", serif;
       list-style-type: none;
@@ -43,7 +44,6 @@
       #mobileimage img {
         width: 100%;
         height: auto;
-        opacity: 60%
       }
 
       #desktopimage img {
@@ -55,7 +55,17 @@
         padding: 3px;
       }
     }
-
+    
+     
+      /* Top left text */
+    .top-leftmobile {
+      position: absolute;
+      top: 300px;
+      left: 25px;
+      font-size: 3em;
+      color: white;
+    }
+  
     @media (min-width: 601px) {
 
       /* screens larger than 600px wide */
@@ -79,12 +89,25 @@
       #desktopimage img {
         max-width: 100%;
         height: auto;
-        opacity: 60%
       }
 
       #mobileimage img {
         display: none;
       }
+      
+      /* Top left text */
+    .top-leftdesktop {
+      position: absolute;
+      top: 200px;
+      left: 25px;
+      font-size: 3em;
+      color: white;
+    }
+    
+    /* Top left text */
+    .top-leftmobile {
+      display:none;
+    }
 
     }
 
@@ -115,6 +138,8 @@
     <div id="desktopimage">
       <img src="desktop title image.jpg" alt="description of image">
     </div>
+     <div class="top-leftdesktop">Things to Do in Kitchener-Waterloo: <br> Christmas Edition</div>
+    <div class="top-leftmobile">Things to Do in Kitchener-Waterloo: <br> Christmas Edition</div>
     <h2>01. <br> Wonder of Lights</h2>
     <p>Where: Waterloo Park <br>
       When: November 25, 2023 - January 1, 2024 <br>
