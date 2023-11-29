@@ -7,164 +7,173 @@
     <link href="https://fonts.googleapis.com/css?family=DM Serif Display" rel="stylesheet">
   </head>
   <style>
-    body {
-      font-family: Source Sans Pro, sans-serif;
-    }
+    <!--
+    Code copied from: https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form
+    Author: w3schools.com Name: How TO - Contact Form Description: Contact Form Date retrieved: Nov. 28,
+    2023
+    -->
 
-    h1 {
-      font-family: DM Serif Display, serif;
-    }
+  <!-- Copied code starts -->
 
-    * {
-      box-sizing: border-box;
-    }
+  body {
+  font-family: Source Sans Pro, sans-serif;
+  }
 
-    input[type=text],
-    select,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      resize: none;
-    }
+  h1 {
+  font-family: DM Serif Display, serif;
+  }
 
-    input[type=submit] {
-      background-color: white;
-      color: black;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+  * {
+  box-sizing: border-box;
+  }
 
-    input[type=submit]:hover {
-      font-weight: bold;
-    }
+  input[type=text],
+  select,
+  textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+  }
 
-    input[type=submit]:active {
-      background-color: #234014;
-      color: white;
-    }
+  input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
 
-    .container {
-      border-radius: 5px;
-      background-color: #D9042C;
-      padding: 20px;
-      color: white;
-    }
+  input[type=submit]:hover {
+  font-weight: bold;
+  }
 
-    ul {
-      font-family: "DM Serif Display", serif;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+  input[type=submit]:active {
+  background-color: #234014;
+  color: white;
+  }
 
-    li a {
-      color: #234014;
-      display: block;
-      padding: 10px;
-    }
+  .container {
+  border-radius: 5px;
+  background-color: #D9042C;
+  padding: 20px;
+  color: white;
+  }
+  <!-- Copied code ends -->
 
-    li a:hover {
-      color: #898C32;
-    }
+  ul {
+  font-family: "DM Serif Display", serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
 
-    li a:active {
-      color: #D9042C;
-    }
+  li a {
+  color: #234014;
+  display: block;
+  padding: 10px;
+  }
 
-    @media (max-width: 600px) {
+  li a:hover {
+  color: #898C32;
+  }
 
-      /* screens less than 600px wide */
-      #headline {
-        display: block;
-        text-align: center
-      }
+  li a:active {
+  color: #D9042C;
+  }
 
-      #mobileimage img {
-        width: 100%;
-        height: auto;
-      }
+  @media (max-width: 600px) {
 
-      #desktopimage img {
-        display: none;
-      }
+  /* screens less than 600px wide */
+  #headline {
+  display: block;
+  text-align: center
+  }
 
-      li a {
-        display: block;
-        padding: 3px;
-      }
-    }
+  #mobileimage img {
+  width: 100%;
+  height: auto;
+  }
+
+  #desktopimage img {
+  display: none;
+  }
+
+  li a {
+  display: block;
+  padding: 3px;
+  }
+  }
 
 
-    /* Top left text */
-    .top-leftmobile {
-      position: absolute;
-      top: 300px;
-      left: 25px;
-      font-size: 3em;
-      color: white;
-    }
+  /* Top left text */
+  .top-leftmobile {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  font-size: 3em;
+  color: white;
+  }
 
-    @media (min-width: 601px) {
+  @media (min-width: 601px) {
 
-      /* screens larger than 600px wide */
-      body {
-        background-color: white;
-      }
+  /* screens larger than 600px wide */
+  body {
+  background-color: white;
+  }
 
-      img {
-        max-width: 50%;
-        height: auto;
-      }
+  img {
+  max-width: 50%;
+  height: auto;
+  }
 
-      li {
-        float: left
-      }
+  li {
+  float: left
+  }
 
-      #headline {
-        display: block;
-      }
+  #headline {
+  display: block;
+  }
 
-      #desktopimage img {
-        max-width: 100%;
-        height: auto;
-      }
+  #desktopimage img {
+  max-width: 100%;
+  height: auto;
+  }
 
-      #mobileimage img {
-        display: none;
-      }
+  #mobileimage img {
+  display: none;
+  }
 
-      /* Top left text */
-      .top-leftdesktop {
-        position: absolute;
-        top: 200px;
-        left: 25px;
-        font-size: 3em;
-        color: white;
-      }
+  /* Top left text */
+  .top-leftdesktop {
+  position: absolute;
+  top: 200px;
+  left: 25px;
+  font-size: 3em;
+  color: white;
+  }
 
-      /* Top left text */
-      .top-leftmobile {
-        display: none;
-      }
+  /* Top left text */
+  .top-leftmobile {
+  display: none;
+  }
 
-    }
+  }
 
-    img {
-      background-color: #D9042C;
-      padding: .800em;
-    }
+  img {
+  background-color: #D9042C;
+  padding: .800em;
+  }
 
-    h2 {
-      color: #234014;
-      font-size: 2em;
-    }
+  h2 {
+  color: #234014;
+  font-size: 2em;
+  }
   </style>
   <body>
     <div id="headline">
@@ -203,6 +212,16 @@
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Bibendum ut tristique et egestas quis ipsum suspendisse. Tristique senectus et netus et malesuada. Mi bibendum neque egestas congue quisque egestas diam in. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Viverra vitae congue eu consequat ac felis donec et odio. Lacus vel facilisis volutpat est velit egestas dui. Et malesuada fames ac turpis egestas integer. Egestas integer eget aliquet nibh. Egestas erat imperdiet sed euismod nisi. Bibendum neque egestas congue quisque egestas. Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Amet cursus sit amet dictum sit amet justo donec. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Suspendisse in est ante in. Nunc sed id semper risus. Sed turpis tincidunt id aliquet risus feugiat in ante metus.
     </p>
+
+    <!--
+Code copied from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form
+Author: w3schools.com
+Name: How TO - Contact Form
+Description: Contact Form
+Date retrieved: Nov. 28, 2023
+-->
+
+    <!-- Copied code starts -->
     <div class="container">
       <h1>Leave a Comment</h1>
       <form action="/action_page.php">
@@ -219,6 +238,8 @@
         <input type="Submit" value="Submit">
       </form>
     </div>
+    <!-- Copied code ends -->
+    
     <h2>Get to Know Me!</h2>
     <img src="Get to Know Me!.jpg" alt="description of image" style="max-width:200px;height:auto;">
     <p>Hi, my name is Jennifer! I am originally from Toronto, but moved to Waterloo for school. During my free time, I like to try out new restaurants, walk around, and go to different events happening in the Kitchener-Waterloo area with my friends. </p>
